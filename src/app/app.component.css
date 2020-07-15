@@ -1,0 +1,17 @@
+.main-content { padding: 30px 10px; }
+.container { width: 60%; }
+
+.sub-total input {
+    width: 36px;
+    height: auto;
+    padding: 2px 8px;
+    margin: 0 4px 0 10px;
+    background: var(--backgroundColor);
+}
+
+.sub-total .table-responsive-sm { width: 50%; }
+
+@media screen and (max-width: 769px) {
+    .container { width: 100% !important; }
+    .sub-total .table-responsive-sm  { width: 100% !important; }
+}

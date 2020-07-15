@@ -1,0 +1,50 @@
+<!-- Invoice -->
+<div>
+  <h2>Bill To</h2>
+  <form class="row form-inline">
+    <div class="col">
+      <div class="form-group mb-0">
+        <label for="companyName" class="col-form-label">Company Name: </label>
+        <div>
+          <input type="text" class="form-control-plaintext" id="companyName" placeholder="Enter Company Name">
+        </div>
+      </div>
+  
+      <div class="form-group mb-0">
+        <label for="address" class="col-form-label">Address: </label>
+        <div>
+          <input type="text" class="form-control-plaintext" id="address" placeholder="Enter Company Address">
+        </div>
+      </div>
+  
+      <div class="form-group mb-0">
+        <label for="phoneNumber" class="col-form-label">Phone: </label>
+        <div>
+          <input type="text" class="form-control-plaintext" id="phoneNumber" placeholder="Enter Phone Number">
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-group mb-0">
+        <label for="invoiceID" class="col-form-label">Invoice #: </label>
+        <div>
+          <input type="text" class="form-control-plaintext" id="invoiceID" value="1322">
+        </div>
+      </div>
+    
+      <div class="form-group mb-0">
+        <label for="invoiceDate" class="col-form-label">Invoice Date: </label>
+        <div>
+          <input type="text" class="form-control-plaintext" id="invoiceDate" placeholder="07/07/2020">
+        </div>
+      </div>
+
+      <div class="form-group mb-0">
+        <label class="col-form-label">Amount: </label>
+        <div class="d-flex align-items-center invoice-amount">
+          &#8377; {{ grandTotal }}
+        </div>
+      </div>
+    </div>
+    </form>
+</div>

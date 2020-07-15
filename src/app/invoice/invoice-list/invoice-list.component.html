@@ -1,0 +1,26 @@
+<div class="table-responsive-sm">
+    <table class="table table-sm">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">No.</th>
+            <th scope="col">Product</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Amount</th>
+            <th style="width: 100px;"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of products; index as i">
+            <td>{{ i + 1 }}</td>
+            <td><input type="text" class="form-control-plaintext" [value]="product.name"/></td>
+            <td class="d-flex align-items-center"><strong>&#8377;</strong> <input type="text" class="form-control-plaintext" [value]="product.price" (input)="inputOnChange($event, i)"/></td>
+            <td><input type="text" class="form-control-plaintext" [value]="product.quantity" (input)="inputQuantityChange($event, i)"/></td>
+            <td><strong>&#8377;</strong> {{ product.amount }}</td>
+            <td align="right"><button class="btn btn-default" (click)="deleteItem(i)"><img src="../../../assets/red-bin.png" alt="Delete" width="20"/></button></td>
+          </tr>          
+        </tbody>
+      </table>
+      <!-- Add -->
+      <button class="btn btn-success" (click)="addItem()">Add</button>
+</div>

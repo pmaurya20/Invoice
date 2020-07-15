@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global CSS */
+:root {
+    --grey: #869dad;
+    --black: #365366;
+    --borderColor: #d9e5ed;
+    --backgroundColor: #eff7f9;
+    --white: #fff;
+    --blue: #1c8bf9;
+    --red: #f24040;
+    --green: #54d600;
+}
+
+body { color: var(--black); }
+h2 { font-size: 1.2rem; }
+
+label {
+    color: var(--grey);
+    font-size: 14px;
+}
+
+input {
+    padding: 10px;
+    font-size: 14px;
+}
+
+input:focus {
+    border: 1px solid var(--borderColor);    
+    background-color: var(--backgroundColor);
+    outline: 0;
+}

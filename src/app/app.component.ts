@@ -1,6 +1,4 @@
 import { Component, ViewEncapsulation, Input, OnInit } from '@angular/core';
-import { debug } from 'console';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
